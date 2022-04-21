@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Calculator</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<body>
+
+
+<b> <h1> Java Calculator </h1> </b> 
+
+ <b>a.</b> <input type="number" id="a">
+ <br>
+ <br>
+ <b>b.</b> <input type="number" id="b">
+ <b> <h3>Sum: </h3> </b> <p id="sum"></p>
+ <b> <h3>Product: </h3> </b> <p id="prod"></p>
+ <b> <h3>Division: </h3> </b> <p id="div"></p>
+ <b> <h3>Subtraction: </h3> </b> <p id="sub"></p>
+
+ <button onclick="calc()">Click here to show confirm alert</button>
+ 
+<script>
+function calc() {
+  var a = parseInt(document.getElementById("a").value);
+  var b = parseInt(document.getElementById("b").value);
+  document.getElementById("sum").innerHTML = a+b;
+  document.getElementById("prod").innerHTML = a*b;
+  document.getElementById("div").innerHTML = a/b;
+  document.getElementById("sub").innerHTML = a-b;
+}
+</script>
+
+</body>
+</html> 

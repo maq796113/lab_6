@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+
+
+<body>
+
+<b> <h1> Min and Max </h1> </b> 
+
+ <b>a.</b> <input type="number" id="a">
+ <br>
+ <br>
+ <b>b.</b> <input type="number" id="b">
+ <br>
+ <br>
+ <b>c.</b> <input type="number" id="c">
+ <br>
+ <br>
+ <b>d.</b> <input type="number" id="d">
+ <br>
+ <br>
+ <b>e.</b> <input type="number" id="e">
+ <b> <h3>Min: </h3> </b> <p id="min"></p>
+ <b> <h3>Max: </h3> </b> <p id="max"></p>
+ <b> <h3>Random: </h3> </b> <p id="rand"></p>
+
+
+ <button onclick="calc()">Click here to show confirm alert</button>
+ 
+<script>
+function calc() {
+  var a = parseInt(document.getElementById("a").value);
+  var b = parseInt(document.getElementById("b").value);
+  var c = parseInt(document.getElementById("c").value);
+  var d = parseInt(document.getElementById("d").value);
+  var e = parseInt(document.getElementById("e").value);
+  var arr = [a, b,c,d,e]
+  document.getElementById("max").innerHTML = Math.max(a,b,c,d,e);
+  document.getElementById("min").innerHTML = Math.min(a,b,c,d,e);
+  document.getElementById("rand").innerHTML = arr[Math.floor(Math.random() * arr.length)];
+}
+</script>
+
+
+</body>
+</html> 
