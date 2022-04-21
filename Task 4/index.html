@@ -4,39 +4,51 @@
 <title>Formatting</title>
 
 <body>
+	<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	<p id="bigbold"> </p>
+	<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially</p>
+	<p id="bold1"> </p>
+	<p>. It was popularised in the</p>
+	<p id="bold2"> </p>
+	<p>with the release of</p>
+	<p id="bold3"> </p>
+	<p>sheets containing Lorem Ipsum passages, and</p>
+	<p id="strike"> </p>
+	<p>publishing software like Aldus</p>
+	<p id="link"> </p>
+	<p>including versions of</p>
+	<p id="bigitalic"> </p>
+	<p>."</p>
 
 	<script>
-		var str1 = new String(" \"Lorem Ipsum is simply dummy text of the printing and typesetting industry.");
-		var _bigbold = new String("Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.");
-		var str2 = new String("It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially");
-		var _bold1 = new String("UNCHANGED");
-		var str3 = new String("It was popularised in the");
-		var _bold2 = new String("1960s");
-		var str4 = new String("with the release of");
-		var _bold3 = new String("LETRASET");
-		var str5 = new String("sheets containing Lorem Ipsum passages, and");
-		var _strike = new String("more recently with desktop");
-		var str6 = new String("publishing software like Aldus");
-		var _link = new String("PageMaker");
-		var str7 = new String("including versions of");
-		var _bigitalic = new String("Lorem Ipsum");
-		var str8 = new String(".\"");
-		document.write(str1.small());
-		document.write(_bigbold.bold().fontsize(6);
-		document.write(str2);
-		document.write(_bold1.bold());
-		document.write(str3);
-		document.write(_bold2.bold());
-		document.write(str4);
-		document.write(_bold3.bold());
-		document.write(str5);
-		document.write(_strike.strike());
-		document.write(str6);
-		document.write(_link.link("https://www.google.com/"));
-		document.write(str7);
-		document.write(_bigitalic.italics().big();
-		document.write(str8);
+		let _bigbold = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+		let _bold1 = "UNCHANGED";
+		let _bold2 = "1960s";
+		let _bold3 = "LETRASET";
+		let _strike = "more recently with desktop";
+		let _link = "PageMaker";
+		let _bigitalic = "Lorem Ipsum";
 
+		let result1 = _bigbold.fontsize(6).bold();
+		document.getElementById("bigbold").innerHTML = result1;
+
+		let result2 = _bold1.bold();
+		document.getElementById("bold1").innerHTML = result2;
+
+		let result3 = _bold2.bold();
+		document.getElementById("bold2").innerHTML = result3;
+
+		let result4 = _bold3.bold();
+		document.getElementById("bold3").innerHTML = result4;
+
+		let result5 = _strike.strike();
+		document.getElementById("strike").innerHTML = result5;
+
+		let result6 = _link.link("https://www.google.com/");
+		document.getElementById("link").innerHTML = result6;
+
+		let result7 = _bigitalic.fontsize(6).italics();
+		document.getElementById("bigitalic").innerHTML = result7;
 	</script>
 
 </body>
